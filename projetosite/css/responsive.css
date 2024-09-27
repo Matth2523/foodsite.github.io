@@ -1,0 +1,100 @@
+@media screen and (max-width: 1030px){
+    header .menu-desktop, header .btn-contato{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 970px){
+    /* Responsivo Logo */
+    
+    header .logo img {
+        max-width: 180px;
+        margin-top: 10px;
+    }
+    
+    
+    /* Responsivo do Food */
+
+    .food-site .txt-food h1 {
+        font-size: 3em;
+        line-height: 45px;
+    }
+    
+    
+    .food-site .txt-food p {
+        font-size: 20px;
+    }
+    
+    .food-site .txt-food p span {
+        display: inline;
+    }
+    
+    .food-site button {
+        font-size: 15px;
+    }
+
+    /* Responsivo da Quem Somos */
+    .quem-somos .itens-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quem-somos .itens-container .img-itens img {
+        width: 100%;
+    }
+
+    .quem-somos .itens-container .txt-itens p{
+        margin-bottom: 20px;
+    }
+
+    .quem-somos .itens-container .item-1{
+        order: 1;
+    }
+
+    .quem-somos .itens-container .item-2{
+        order: 0;
+    }
+
+    /* Respnsivo do Contato */
+
+    .txt-contato, .icons-contato{
+        display: block;
+        width: 100%;
+    }
+
+    .contato .txt-contato h3{
+        font-size: 2em;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .contato .icons-contato button{
+        width: 100%;
+    }
+
+    .contato .icons-contato button i{
+        font-size: 28px;
+    }
+
+     .contato .txt-contato p{
+        margin-bottom: 20px;
+        text-align: center;
+     }
+
+     /* Responsivo de Restaurantes */
+    
+    .restaurantes h3{
+        font-size: 2.8em;
+    }
+    
+    .restaurantes p{
+        font-size: 19px;
+        
+    }
+    
+    .restaurantes button{
+        margin-top: 10px;
+
+    }
+
+}

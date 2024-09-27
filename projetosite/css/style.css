@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #e3e3e3;
+    
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+header .btn-contato button,
+.food-site button, .restaurantes button{
+    width: 140px;
+    height: 50px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header .btn-contato button:hover,
+.food-site button:hover, .restaurantes button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilo do Header */
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: .5s;
+    z-index: 5;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 140px;
+}
+
+/* Estilo do menu dinamico */
+
+header .logo img.logo-preta{
+    display: none;
+}
+
+header.rolar{
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0 8px #00000060;
+}
+
+header.rolar .menu-desktop nav ul li a{
+    color: #000;
+}
+
+header.rolar .btn-contato button{
+    border: 1px solid #000;
+    color: #000;
+}
+
+header.rolar .btn-contato button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+header.rolar .logo .logo-branca{
+    display: none;
+}
+
+header.rolar .logo .logo-preta{
+    display: block;
+}
+
+/* --------------------------- */
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+}
+
+header .btn-contato button {
+    width: 140px;
+    height: 50px;
+}
+
+/* Estilo do Food */
+section.food-site {
+    height: 98vh;
+    background-image: url(/images/imagemcomidadegrade.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.food-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.food-site .txt-food h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.food-site .txt-food h1 span {
+    display: block;
+    font-weight: 800;
+}
+
+.food-site .txt-food p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.food-site .txt-food p span {
+    display: block;
+}
+
+.food-site button {
+    font-size: 15px;
+}
+
+/* Estilo das Imagens Quem Somos */
+
+.restaurante-nosso {
+    border-radius: 15px;
+    box-shadow: 6px 6px 0 #ff6f01;
+}
+
+.historia-restaurante {
+    border-radius: 15px;
+    box-shadow: 6px 6px 0 #ff6f01;
+}
+
+.ficamos-aonde {
+    border-radius: 15px;
+    box-shadow: 6px 6px 0 #ff6f01;
+}
+
+/* Estilo das Quem Somos */
+section.quem-somos {
+    padding: 80px 0;
+}
+
+.quem-somos .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+
+.quem-somos .itens-container .img-itens img {
+    max-width: 500px;
+}
+
+.quem-somos .itens-container .txt-itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container .txt-itens h3 span {
+    font-weight: 300;
+}
+
+/* Estilo do Contato */
+
+section.contato{
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.2em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.contato .icons-contato button i{
+    font-size: 22px;
+}
+
+.contato .icons-contato button:hover{
+    background-color: #000;
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}
+
+/* Estilo de Restaurantes */
+
+section.restaurantes{
+    height: 600px;
+
+    background-image: url(../images/restauranteimagem.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.restaurantes > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000d7;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+} 
+
+.restaurantes > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.restaurantes h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.restaurantes h3 span{
+    display: block;
+    font-weight: 600;
+}
+
+.restaurantes p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.restaurantes button{
+    width: 150px;
+    height: 60px;
+}
+
+/* Estilo da Reserva */
+
+section.reserva{
+   padding: 80px 0; 
+}
+
+.txt-reserva, .explicacao-reserva{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.reserva .txt-reserva{
+    position: sticky;
+    top: 50%;
+    padding-bottom: 35px;
+}
+
+.reserva .txt-reserva h3{
+    font-size: 4em;
+    line-height: 60px;
+    font-weight: 300;
+
+}
+
+.reserva .txt-reserva h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.explicacao-reserva .reserva-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 40px;
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+.explicacao-reserva .reserva-box img{
+    max-width: 100px;
+}
+
+.explicacao-reserva .reserva-box h4{
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+
+}
+
+.explicacao-reserva .reserva-box h4 span{
+    font-weight: 300;
+}
+
+.explicacao-reserva .reserva-box p{
+    line-height: 20px;
+}
+
+/* Estilo do Rodapé */
+
+footer{
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top-footer button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+footer .top-footer button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+footer .middle-footer{
+    margin: 20px 0;
+}
+
+footer .middle-footer a{
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .bottom-footer{
+    border-top: 2px solid #fff;
+}
+
+footer .bottom-footer p{
+    color: #fff;
+    margin-top: 10px;
+}
